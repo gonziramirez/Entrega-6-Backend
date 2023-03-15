@@ -9,8 +9,8 @@ const { hashPassword, validatePassword } = require("../utils/bcrypt.utils.js")
 
 const LocalStrategy = local.Strategy
 
-const PASSPORT_GITHUB_CLIENT_ID = 'Iv1.5ee2cc348e0e858c'
-const PASSPORT_GITHUB_CLIENT_SECRET = '9d4c7ecdc09fab58746c89b19b2f924b3fd36dfa'
+const PASSPORT_GITHUB_CLIENT_ID = 'tokenID'
+const PASSPORT_GITHUB_CLIENT_SECRET = 'tokenSecret'
 
 const initializePassport = () => {
     passport.use("signup", new LocalStrategy(
